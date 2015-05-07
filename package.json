@@ -1,11 +1,24 @@
 {
   "name": "Messenger",
-  "version": "1.2.0",
+  "version": "1.3.3",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Aluxian/Facebook-Messenger-Desktop"
+    "url": "git@github.com:Aluxian/Facebook-Messenger-Desktop.git"
+  },
+  "scripts": {
+    "postinstall": "(cd src && npm install)"
   },
   "devDependencies": {
-    "node-webkit-builder": "^1.0.11"
+    "coffee-script": "^1.9.1",
+    "gulp": "^3.8.11",
+    "gulp-github-release": "git://github.com/aluxian/gulp-github-release.git",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-node-webkit-builder": "git://github.com/leftstick/gulp-node-webkit-builder.git",
+    "gulp-uglify": "^1.2.0",
+    "run-sequence": "^1.0.2",
+    "shelljs": "^0.4.0"
+  },
+  "optionalDependencies": {
+    "gulp-appdmg": "git://github.com/aluxian/gulp-appdmg.git"
   }
 }

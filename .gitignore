@@ -1,3 +1,6 @@
-/build
-/cache
-/node_modules
+/src/vendor/
+/opt/
+build/
+dist/
+cache/
+node_modules/
